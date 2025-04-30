@@ -1,12 +1,3 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: "[FEATURE] Title"
-labels: ''
-assignees: ''
-
----
-
 ## 🥅  Goal
 
 Describe the purpose of this issue. What is the outcome you're aiming to achieve?
