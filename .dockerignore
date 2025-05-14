@@ -17,3 +17,6 @@ node_modules/
 # Docs and local configs
 README.md
 .env
+
+# Local editor
+.vscode/
