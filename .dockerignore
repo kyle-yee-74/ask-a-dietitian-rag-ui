@@ -1,0 +1,19 @@
+# Git
+.git/
+.gitignore
+
+# Build artefacts
+build/
+.react-router/
+
+# Dependency caches
+node_modules/
+.yarn/
+.pnp.*
+
+# OS
+.DS_Store
+
+# Docs and local configs
+README.md
+.env
