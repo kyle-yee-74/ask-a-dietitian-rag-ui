@@ -20,3 +20,9 @@ README.md
 
 # Local editor
 .vscode/
+
+<!-- TODO Verify Docker Yarn section -->
+# Yarn dev artifacts
+.yarn/sdks/
+.yarn/unplugged/
+.yarn/__virtual__/
