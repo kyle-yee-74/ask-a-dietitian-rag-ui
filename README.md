@@ -78,6 +78,17 @@ SESSION_SECRET=change-me
 
 ---
 
+## 🧩 VS Code setup
+
+VS Code needs to know where Yarn Berry stores its type definitions when Plug’n’Play (PnP) is enabled.
+
+| Scenario | One-time setup |
+|----------|----------------|
+| **Keep PnP (recommended)** | ```bash\nyarn dlx @yarnpkg/sdks vscode   # generates .vscode/pnpify* helpers\n```<br>Then reload the TypeScript server (<kbd>⇧⌘P</kbd> → **TypeScript: Restart TS Server**). |
+| **Switch to classic `node_modules`** | 1 Add to **`.yarnrc.yml`**:<br>```yaml\nnodeLinker: node-modules\n```<br>2 Re-install:<br>```bash\nyarn install --inline-builds\n``` |
+
+---
+
 ## 🐳 Docker (Prod)
 
 ```bash
