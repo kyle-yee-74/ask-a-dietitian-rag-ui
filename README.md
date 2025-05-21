@@ -51,7 +51,7 @@ yarn install --inline-builds
 # 2. Start dev server (Express + Vite HMR on port 5173)
 yarn dev
 
-# 3. Open http://localhost:5173
+# 3. Open http://localhost:3000
 ```
 
 ### Environment Variables
