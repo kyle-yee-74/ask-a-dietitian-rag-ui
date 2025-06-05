@@ -14,7 +14,7 @@ export const MessageContainer = ({
   }, [messages]);
 
   return (
-    <div className="flex-1 overflow-y-auto space-y-2 mb-4 p-2 pb-32 bg-white rounded shadow">
+    <div className="flex-1 overflow-y-auto space-y-2 pb-32 bg-white rounded shadow">
       {messages.map((msg) => (
         <div
           key={msg.id}
