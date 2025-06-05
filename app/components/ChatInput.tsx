@@ -2,13 +2,14 @@ import React, { useState, useRef, useEffect } from "react";
 
 type Props = {
   onSend: (message: string) => void;
+  botIsTyping: boolean;
 };
 
-export const ChatInput = ({ onSend }: Props) => {
+export const ChatInput = ({ onSend, botIsTyping }: Props) => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = () => {
-    if (!message.trim()) return;
+    if (!message.trim() || botIsTyping) return;
     onSend(message.trim()); // send the message up
     setMessage(""); // reset the input
   };
@@ -33,7 +34,7 @@ export const ChatInput = ({ onSend }: Props) => {
         <button
           onClick={handleSubmit}
           className="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
-          disabled={!message.trim()}
+          disabled={!message.trim() || botIsTyping}
         >
           Send
         </button>

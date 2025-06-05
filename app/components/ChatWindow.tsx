@@ -40,7 +40,7 @@ export const ChatWindow = () => {
       <div className="flex-1 pt-16 flex justify-center">
         <div className="w-full max-w-2xl px-4 flex flex-col">
           <MessageContainer messages={messages} botIsTyping={botIsTyping} />
-          <ChatInput onSend={onSend} />
+          <ChatInput onSend={onSend} botIsTyping={botIsTyping} />
         </div>
       </div>
     </div>
